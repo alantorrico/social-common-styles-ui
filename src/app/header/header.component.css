@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/**
+  EDgrid es una librería CSS para construir layouts con Responsive Web Design
+  Importe este archivo en su proyecto para empezar a usarlo
+**/
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.sc-ui-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.sc-ui-item, .sc-ui-header__title, .sc-ui-header__actions {
+  margin: 0;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em; }
+
+.sc-ui-item {
+  width: 100%; }
+  .sc-ui-item.sc-ui-container {
+    padding-left: 0;
+    padding-right: 0; }
+
+/*
+| Mixin para crear cuadriculas
+|
+| $gridItemSelector: nombre del selector CSS de cada item de la cuadricula
+| $listColumns:
+|              * lista de numeros de columnas en cada breakpoint (separados por espacios). Ej: 1 2 3 4
+|              * el numero de columnas del ultimo breakpoint se hereda a breakpoints superiores
+| $gutter: separación entre cada item de la cuadricula (opcional)
+|
+*/
+.sc-ui-header {
+  height: 4em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center; }
+  .sc-ui-header > .sc-ui-item {
+    padding-left: 0em;
+    padding-right: 0em; }
+
+.sc-ui-header--blue {
+  color: #FFFFFF;
+  background: #1e6896; }
+
+.sc-ui-header__title {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+.sc-ui-header__actions {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; }
+
+.sc-ui-header__btn {
+  height: 1.5em;
+  border-radius: 3px 3px;
+  border: none;
+  padding: 0 0.5em 0 0.5em;
+  margin: 0; }
+
+sc-ui-header__btn--primary {
+  color: gray;
+  background: #1e6896; }
+
+/*# sourceMappingURL=header.component.css.map */

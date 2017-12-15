@@ -1,0 +1,40 @@
+$devMode: false;
+@import "../../sc-ui-grid";
+
+.sc-ui-header {
+  height: 4em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 12px;
+  @include noPaddingContainer();
+  @include crossCenter();
+}
+
+.sc-ui-header--blue{
+  color: #FFFFFF;
+  background: #1e6896;
+}
+
+.sc-ui-header__title {
+  @include scUIItem(70);
+  @include mainStart();
+}
+
+.sc-ui-header__actions {
+  @include scUIItem(30);
+  @include mainEnd();
+}
+
+.sc-ui-header__btn {
+  height: 1.5em;
+  border-radius: 3px 3px;
+  border: none;
+  padding: 0 0.5em 0 0.5em;
+  margin: 0;
+}
+sc-ui-header__btn--primary{
+  color: gray;
+  background: #1e6896;
+}
+
+
